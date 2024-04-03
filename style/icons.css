@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?rqzqsc');
+    src:  url('fonts/icomoon.eot?rqzqsc#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?rqzqsc') format('truetype'),
+      url('fonts/icomoon.woff?rqzqsc') format('woff'),
+      url('fonts/icomoon.svg?rqzqsc#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-chevron-down:before {
+    content: "\e900";
+  }
+  .icon-chevron-left:before {
+    content: "\e902";
+  }
+  .icon-chevron-right::after{
+    content: "\e903";
+  }
+  .icon-chevron-up:before {
+    content: "\e904";
+  }
+  .icon-chevron-with-circle-down:before {
+    content: "\e905";
+  }
+  .icon-chevron-with-circle-left:before {
+    content: "\e906";
+  }
+  .icon-chevron-with-circle-right:before {
+    content: "\e907";
+  }
+  .icon-chevron-with-circle-up:before {
+    content: "\e908";
+  }
+  .icon-align-center:before {
+    content: "\e909";
+  }
+  .icon-align-justify:before {
+    content: "\e90a";
+  }
+  .icon-align-left:before {
+    content: "\e90b";
+  }
+  .icon-arrow-down:before {
+    content: "\e90c";
+  }
+  .icon-arrow-down-circle:before {
+    content: "\e90d";
+  }
+  .icon-arrow-down-left:before {
+    content: "\e90e";
+  }
+  .icon-arrow-down-right:before {
+    content: "\e90f";
+  }
+  .icon-arrow-left:before {
+    content: "\e910";
+  }
+  .icon-arrow-left-circle:before {
+    content: "\e911";
+  }
+  .icon-arrow-right:before {
+    content: "\e912";
+  }
+  .icon-arrow-right-circle:before {
+    content: "\e913";
+  }
+  .icon-arrow-up:before {
+    content: "\e914";
+  }
+  .icon-arrow-up-circle:before {
+    content: "\e915";
+  }
+  .icon-arrow-up-left:before {
+    content: "\e916";
+  }
+  .icon-arrow-up-right:before {
+    content: "\e917";
+  }
+  .icon-at-sign:before {
+    content: "\e918";
+  }
+  .icon-chevron-down1:before {
+    content: "\e919";
+  }
+  .icon-chevron-left1:before {
+    content: "\e91a";
+  }
+  .icon-chevron-right1:before{
+    content: "\e91b";
+  }
+  .icon-chevron-up1:before {
+    content: "\e91c";
+  }
+  .icon-grid:before {
+    content: "\e91d";
+  }
+  .icon-list:before {
+    content: "\e91e";
+  }
+  .icon-loader:before {
+    content: "\e91f";
+  }
+  .icon-lock:before {
+    content: "\e920";
+  }
+  .icon-phone:before {
+    content: "\e921";
+  }
+  .icon-plus:before {
+    content: "\e922";
+  }
+  .icon-plus-circle:before {
+    content: "\e923";
+  }
+  .icon-rotate-cw:before {
+    content: "\e924";
+  }
+  .icon-thumbs-down:before {
+    content: "\e925";
+  }
+  .icon-thumbs-up:before {
+    content: "\e926";
+  }
+  .icon-unlock:before {
+    content: "\e927";
+  }
+  .icon-upload:before {
+    content: "\e928";
+  }
+  .icon-x-circle:before {
+    content: "\e929";
+  }
+  .icon-cheveron-right:before {
+    content: "\e901";
+  }
+
+  .odkazy a::after, .gallery__btn::after {
+    font-family: 'icomoon' !important;
+    content: "\e91b";
+  } 

@@ -1,0 +1,43 @@
+
+
+.body--top-side-margin {
+    margin: 20px 20px 0px 20px;
+}
+
+.body--side-margin {
+    margin: 0px 20px;
+}
+
+.img--responsive {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img--height {
+    height: 100%;
+}
+
+h2, .podnadpis, .nadpis{
+    margin: 0em;
+}
+
+h1 {
+    margin: 0em 1em;
+}
+
+li {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+

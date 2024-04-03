@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./imgs/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/typography.css">
+    <link rel="stylesheet" href="./style/layout.css">
+    <link rel="stylesheet" href="./style/landing.css">
+    <link rel="stylesheet" href="./style/colors.css">
+    <link rel="stylesheet" href="./style/icons.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
+    <style>
+        .swiper-pagination-bullet-active{
+            background-color: #282828;
+        }
+        .swiper-button-prev {
+            height: 100%;
+            width: 30%;
+            left: 0;
+            top: 0;
+            margin: 0px;
+            opacity: 0;
+        }
+        .swiper-button-next {
+            height: 100%;
+            width: 30%;
+            right: 0;
+            top: 0;
+            margin: 0px;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+        <header class="card body--top-side-margin">
+            <picture>
+                <img class="img--responsive" src="./imgs/header2K.jpg">
+            </picture>
+            <div class="card__items">
+                <h1>Nová Zmzlina <strong class="strong--exlusive">EXCLUSIVE</strong></h1>
+                <p class="podnadpis">Smetana. Kvalitnější. Inovativní vzhled.</p>
+                <div class="odkazy">
+                    <a class="btn" href="#">Více</a>
+                    <a class="btn" href="#">Koupit</a>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <menu>
+                <li class="nav__li--1x1"><a href="index.html" class="logo">
+                    <img src="./imgs/logo.svg" alt="Logo">
+                </a></li>
+                <div class="menu__middle">
+                    <li><a class="btn" href="./obchod.html">Obchod</a></li>
+                    <li><a class="btn" href="#">Zmrzlina</a></li>
+                </div>
+                <li class="nav__li--1x1 nav__cart"><img src="./imgs/shopping-cart.svg" alt="Nákupní košík"></li>
+            </menu>
+        </nav>
+        <main>
+            <section class="grid body--side-margin">
+                <div class="card grid-item--1x1">
+                    <picture>
+                        <img class="img--responsive" src="./imgs/pohadka.jpg">
+                    </picture>
+                    <div class="card__items card__items--1x1">
+                        <p class="nadpis"><strong class="strong--orange">Pohádková</strong> chuť.</p>
+                        <div class="odkazy odkazy--right">
+                            <a class="btn" href="#">Více</a>
+                            <a class="btn" href="#">Koupit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card grid-item--1x1">
+                    <picture>
+                        <img class="img--responsive" src="./imgs/perfektni.jpg">
+                    </picture>
+                    <div class="card__items card__items--1x1">
+                        <p class="nadpis"><strong class="strong--blue">Perfektní</strong> až do konce.</p>
+                        <div class="odkazy odkazy--right">
+                            <a class="btn" href="#">Více</a>
+                            <a class="btn" href="#">Koupit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item--width2 card">
+                    <picture> 
+                        <img class="img--responsive img--height" src="./imgs/klasika.jpg">
+                    </picture>
+                    <div class="card__items">
+                        <h1>Stará známa <strong class="strong--yellow">klasika.</strong></h1>
+                        <p class="podnadpis">Teď si zavspomínám na dětsví.</p>
+                        <div class="odkazy">
+                            <a class="btn" href="#">Více</a>
+                            <a class="btn" href="#">Koupit</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="gallery">
+                <h2>Galerie</h2>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="gallery__slide swiper-slide">
+                            <picture>
+                                <img class="img--responsive" src="./imgs/malba.jpg">
+                            </picture>
+                            <a class="gallery__btn btn" href="#">Více zde</a>
+                        </div>
+                        <div class="gallery__slide swiper-slide">
+                            <picture>
+                                <img class="img--responsive" src="./imgs/malba.jpg">
+                            </picture>
+                            <a class="gallery__btn btn" href="#">Více zde</a>
+                        </div>
+                        <div class="gallery__slide swiper-slide">
+                            <picture>
+                                <img class="img--responsive" src="./imgs/malba.jpg">
+                            </picture>
+                            <a class="gallery__btn btn" href="#">Více zde</a>
+                        </div>
+                        <div class="gallery__slide swiper-slide">
+                            <picture>
+                                <img class="img--responsive" src="./imgs/malba.jpg">
+                            </picture>
+                            <a class="gallery__btn btn" href="#">Více zde</a>
+                        </div>
+                        <div class="gallery__slide swiper-slide">
+                            <picture>
+                                <img class="img--responsive" src="./imgs/malba.jpg">
+                            </picture>
+                            <a class="gallery__btn btn" href="#">Více zde</a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+        </main>
+    <footer>
+        <div class="footer__menu">
+            <ul class="footer__menu__list">
+                <li><h4>Obchod</h4></li>
+                <li><a href="#">Nová zmrzlina</a></li>
+                <li><a href="#">Klasická zmrzlina</a></li>
+                <li><a href="#">Specialní zmrzlina</a></li>
+            </ul>
+            <ul class="footer__menu__list">
+                <li><h4>Pro Firmy</h4></li>
+                <li><a href="#">Ice Cream a byznys</a></li>
+                <li><a href="#">Nakoupit pro firmu</a></li>
+            </ul>
+            <ul class="footer__menu__list">
+                <li><h4>Kontakt</h4></li>
+                <li><a href="#">Kontaktní údaje</a></li>
+                <li><a href="#">Kontaktní formulář</a></li>
+            </ul>
+        </div>
+        <div class="footer__bottom">
+            <div>
+                <p>Copyright © 2024 Ice Cream Inc. Všechna práva vyhrazena.</p>
+                <p>Zásady ochrany soukromí  |  Používání cookies  |  Prodej a refundace  |  Mapa webu </p>
+            </div>
+            <div>
+                <p>Česko</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+  
+    /*
+    window.addEventListener('resize', () => {
+  const viewportWidth = window.innerWidth;
+});*/
+
+    const viewportWidth = window.innerWidth;
+    if(viewportWidth < 500) {
+        var x = 1;
+    }
+    else {
+        var x = 2.8;
+    }
+    
+    
+    var swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination'
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  slidesPerView: x,
+      spaceBetween: 20,
+      centeredSlides: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+});
+
+  </script>
+</html>
