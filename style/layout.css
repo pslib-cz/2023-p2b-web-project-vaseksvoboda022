@@ -28,9 +28,9 @@ menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0.5em;
+    margin: 8px;
     padding: 0;
-    height: calc(100% - 1em);
+    height: calc(100% - 16px);
 }
 
 .menu__middle {
