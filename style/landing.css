@@ -26,10 +26,6 @@
     justify-self: end;
 }
 
-nav{
-    position: sticky;
-}
-
 header, header picture img {
     height: 80vh;
     object-position: top center;

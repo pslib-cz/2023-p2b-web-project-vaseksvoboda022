@@ -22,7 +22,7 @@ h2, .podnadpis, .nadpis{
     margin: 0em;
 }
 
-h1 {
+h1, .nadpis--hlavni {
     margin: 0em 1em;
 }
 

@@ -1,4 +1,4 @@
-h1 {
+h1, .nadpis--hlavni {
     font-size: 3.25rem;
 }
 
@@ -6,13 +6,13 @@ h2, .podnadpis, .nadpis{
     font-size: 1.75rem;
 }
 
-.nadpis {
+.nadpis, .nadpis--hlavni {
     font-weight: bold;
 }
 
 h4 {
     margin: 0em 0em 0.5em 0em;
-    font-size: 1em;
+    font-size: max(0.9rem, 16px);
 }
 
 nav a {
@@ -26,12 +26,20 @@ nav a {
 .odkazy a{
     font-size: 1.2rem;
 }
-.odkazy a:hover{
-    text-decoration:underline;
-}
 
 footer a, footer p{
-    font-size: 0.75rem;
+    font-size: max(0.7rem, 12px);
+}
+
+@media only screen and (max-width: 850px) {
+    .nadpis--hlavni {
+        font-size: 2.75rem;
+    }
+
+    .nadpis--hlavni + .podnadpis{
+        font-size: 1.50rem;
+    }
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -49,7 +57,7 @@ footer a, footer p{
 }
 
 @media only screen and (max-width: 400px) {
-    h1 {
+    h1, .nadpis--hlavni {
         font-size: 2.25rem;
     }
 
@@ -68,6 +76,17 @@ footer a, footer p{
 
 @media only screen and (min-width: 1440px) {
     :root{
-        font-size: calc(16px + 0.5vw);
+        font-size: calc(16px + 0.35vw);
     }
+    .nadpis {
+        font-size: 2.15rem;
+    }
+
+}
+
+@media only screen and (min-width: 2000px) {
+    :root{
+        font-size: calc(16px + 0.4vw);
+    }
+
 }
