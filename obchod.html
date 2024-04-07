@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Obchod</title>
+    <link rel="shortcut icon" href="./imgs/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="./style/my_normalize.css">
     <link rel="stylesheet" href="./style/typography.css">
     <link rel="stylesheet" href="./style/layout.css">
+    <link rel="stylesheet" href="./style/landing.css">
     <link rel="stylesheet" href="./style/colors.css">
     <link rel="stylesheet" href="./style/icons.css">
-    <link rel="stylesheet" href="./style/landing.css">
-
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
 </head>
 <body>
-    <nav>
+    <nav class="nav--sticky">
         <menu>
             <li class="nav__li--1x1"><a href="index.html" class="logo">
                 <img src="./imgs/logo.svg" alt="Logo">
@@ -26,125 +29,154 @@
             <li class="nav__li--1x1 nav__cart"><img src="./imgs/shopping-cart.svg" alt="Nákupní košík"></li>
         </menu>
     </nav>
-    <main class="shop__main--margin shop">
-        <section id="exclusive">
-            <div class="napis--left">
+        <main class="shop__main--margin shop">
+            <section id="exclusive">
+                <div class="napis--left">
                 <h2 class="nadpis nadpis--shop">Zmzlina <strong class="strong--exlusive">EXCLUSIVE</strong>.</h2>
                 <span class="nadpis nadpis--shop nadpis--semi-transparent">Špičokvá chuť, špičkový vzhled.</span>
             </div>
-            <div class="shop__section__items ">
-                <div class="shop__section__item shop__section__item--exclusive shop__section__item--strawberry">
-                    <div>
-                        <h3>JAHODA KLASIKA</h3>
-                        <p>Již od 299 KČ</p>
-                    </div>
-                    <picture>
-                        <img class="img--responsive img--height shop__item__img" alt="luxusní jahodová zmrzlina na talířku" src="./imgs/exclusive_jahoda.jpg">
-                    </picture>
-                </div>
-                <div class="shop__section__item shop__section__item--exclusive shop__section__item--blueberry">
-                    <div>
-                        <h3>BORŮVKA EXCLUSIVE</h3>
-                        <p>Již od 299 KČ</p>
-                    </div>
-                    <picture>
-                        <img class="img--responsive img--height shop__item__img" alt="luxusní borůvková zmrzlina na talířku" src="./imgs/exclusive_boruvka.jpg">
-                    </picture>
-                </div>
-                <div class="shop__section__item shop__section__item--exclusive shop__section__item--vanilla">
-                    <div>
-                        <h3>VANILKA EXCLUSIVE</h3>
-                        <p>Již od 299 KČ</p>
-                    </div>
-                    <picture>
-                        <img class="img--responsive img--height shop__item__img" alt="luxusní vanilková zmrzlina na talířku" src="./imgs/exclusive_vanilka.jpg">
-                    </picture>
-                </div>
-                <div class="shop__section__item shop__section__item--exclusive shop__section__item--chocolate">
-                    <div>
-                        <h3>ČOKOLÁDA EXCLUSIVE</h3>
-                        <p>Již od 299 KČ</p>
-                    </div>
-                    <picture>
-                        <img class="img--responsive img--height shop__item__img" alt="luxusní vanilková zmrzlina na talířku" src="./imgs/exclusive_coko.jpg">
-                    </picture>
-                </div>
-            </div>
-        </section>
-        <section id="klasika">
-            <div class="napis--left">
-                <h2 class="nadpis nadpis--shop"><strong class="strong--yellow">KLASIKA</strong> zmrzlina.</h2>
-                <span class="nadpis nadpis--shop nadpis--semi-transparent">----</span>
-            </div>
-            </div>
-                <div class="shop__section__items">
-                    <div class="shop__section__item shop__section__item--white">
-                        <picture>
-                            <img class="img--responsive img--height shop__item__img" alt="luxusní jahodová zmrzlina na talířku" src="./imgs/jahoda.jpg">
-                        </picture>
-                        <div>
-                            <h3>JAHODA</h3>
-                            <p>Již od 149 KČ</p>
+                <div class="swiper">
+                    <div class="swiper-wrapper shop__section__items">
+                        <div class="swiper-slide">
+                            <div class="shop__section__item shop__section__item--exclusive shop__section__item--strawberry">
+                                <div>
+                                    <h3>JAHODA EXCLUSIVE</h3>
+                                    <p>Již od 299 KČ</p>
+                                </div>
+                                <picture>
+                                    <img class="img--responsive img--height shop__item__img" alt="luxusní jahodová zmrzlina na talířku" src="./imgs/exclusive_jahoda.jpg">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="shop__section__item shop__section__item--exclusive shop__section__item--blueberry">
+                                <div>
+                                    <h3>BORŮVKA EXCLUSIVE</h3>
+                                    <p>Již od 299 KČ</p>
+                                </div>
+                                <picture>
+                                    <img class="img--responsive img--height shop__item__img" alt="luxusní borůvková zmrzlina na talířku" src="./imgs/exclusive_boruvka.jpg">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="shop__section__item shop__section__item--exclusive shop__section__item--vanilla">
+                                <div>
+                                    <h3>VANILKA EXCLUSIVE</h3>
+                                    <p>Již od 299 KČ</p>
+                                </div>
+                                <picture>
+                                    <img class="img--responsive img--height shop__item__img" alt="luxusní vanilková zmrzlina na talířku" src="./imgs/exclusive_vanilka.jpg">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="shop__section__item shop__section__item--exclusive shop__section__item--chocolate">
+                                <div>
+                                    <h3>ČOKOLÁDA EXCLUSIVE</h3>
+                                    <p>Již od 299 KČ</p>
+                                </div>
+                                <picture>
+                                    <img class="img--responsive img--height shop__item__img" alt="luxusní vanilková zmrzlina na talířku" src="./imgs/exclusive_coko.jpg">
+                                </picture>
+                            </div>
                         </div>
                     </div>
-                    <div class="shop__section__item shop__section__item--white">
-                        <picture>
-                            <img class="img--responsive img--height shop__item__img" alt="luxusní borůvková zmrzlina na talířku" src="./imgs/boruvka.jpg">
-                        </picture>
-                        <div>
-                            <h3>BORŮVKA</h3>
-                            <p>Již od 149 KČ</p>
-                        </div>
-                    </div>
-                    <div class="shop__section__item shop__section__item--white">
-                        <picture>
-                            <img class="img--responsive img--height shop__item__img" alt="luxusní vanilková zmrzlina na talířku" src="./imgs/vanilka.jpg">
-                        </picture>
-                        <div>
-                            <h3>VANILKA</h3>
-                            <p>Již od 149 KČ</p>
-                        </div>
-                    </div>
-                    <div class="shop__section__item shop__section__item--white">
-                        <picture>
-                            <img class="img--responsive img--height shop__item__img" alt="luxusní vanilková zmrzlina na talířku" src="./imgs/coko.jpg">
-                        </picture>
-                        <div>
-                            <h3>ČOKOLÁDA</h3>
-                            <p>Již od 149 KČ</p>
-                        </div>
-                    </div>
-                    <div class="shop__section__item shop__section__item--white">
-                        <picture>
-                            <img class="img--responsive img--height shop__item__img" alt="luxusní vanilková zmrzlina na talířku" src="./imgs/ananas.jpg">
-                        </picture>
-                        <div>
-                            <h3>ANANAS</h3>
-                            <p>Již od 149 KČ</p>
-                        </div>
-                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
-        </section>
-        <section id="special">
-            <div class="napis--left">
-                <h2 class="nadpis nadpis--shop">Specialní zmrzlina.</h2>
-                <span class="nadpis nadpis--shop nadpis--semi-transparent">Takovou jste ještě neměli.</span>
-            </div>
-            </div>
-                <div class="shop__section__items">
-                    <div class="shop__section__item shop__section__item--white">
-                        <picture>
-                            <img class="img--responsive img--height shop__item__img" alt="luxusní jahodová zmrzlina na talířku" src="./imgs/rock.jpg">
-                        </picture>
-                        <div>
-                            <h3>The Rock</h3>
-                            <p>Již od 499 KČ</p>
+            </section>
+            <section id="klasika">
+                <div class="napis--left">
+                    <h2 class="nadpis nadpis--shop"><strong class="strong--yellow">KLASICKÁ</strong> zmrzlina.</h2>
+                    <span class="nadpis nadpis--shop nadpis--semi-transparent">----</span>
+                </div>
+                <div class="swiper">
+                    <div class="swiper-wrapper shop__section__items">
+                        <div class="swiper-slide">
+                            <div class="shop__section__item shop__section__item--white">
+                                <picture>
+                                    <img class="img--responsive img--height shop__item__img" alt="luxusní jahodová zmrzlina na talířku" src="./imgs/jahoda.jpg">
+                                </picture>
+                                <div>
+                                    <h3>JAHODA</h3>
+                                    <p>Již od 149 KČ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="shop__section__item shop__section__item--white">
+                                <picture>
+                                    <img class="img--responsive img--height shop__item__img" alt="luxusní borůvková zmrzlina na talířku" src="./imgs/boruvka.jpg">
+                                </picture>
+                                <div>
+                                    <h3>BORŮVKA</h3>
+                                    <p>Již od 149 KČ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="shop__section__item shop__section__item--white">
+                                <picture>
+                                    <img class="img--responsive img--height shop__item__img" alt="luxusní vanilková zmrzlina na talířku" src="./imgs/vanilka.jpg">
+                                </picture>
+                                <div>
+                                    <h3>VANILKA</h3>
+                                    <p>Již od 149 KČ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="shop__section__item shop__section__item--white">
+                                <picture>
+                                    <img class="img--responsive img--height shop__item__img" alt="luxusní vanilková zmrzlina na talířku" src="./imgs/coko.jpg">
+                                </picture>
+                                <div>
+                                    <h3>ČOKOLÁDA</h3>
+                                    <p>Již od 149 KČ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="shop__section__item shop__section__item--white">
+                                <picture>
+                                    <img class="img--responsive img--height shop__item__img" alt="luxusní vanilková zmrzlina na talířku" src="./imgs/ananas.jpg">
+                                </picture>
+                                <div>
+                                    <h3>ANANAS</h3>
+                                    <p>Již od 149 KČ</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
-        </section>
-        
-    </main>
+            </section>
+            <section id="special">
+                <div class="napis--left">
+                    <h2 class="nadpis nadpis--shop">Specialní zmrzlina.</h2>
+                    <span class="nadpis nadpis--shop nadpis--semi-transparent">Takovou jste ještě neměli.</span>
+                </div>
+                <div class="swiper">
+                    <div class="swiper-wrapper shop__section__items">
+                        <div class="swiper-slide">
+                            <div class="shop__section__item shop__section__item--white">
+                                <picture>
+                                    <img class="img--responsive img--height shop__item__img" alt="luxusní jahodová zmrzlina na talířku" src="./imgs/rock.jpg">
+                                </picture>
+                                <div>
+                                    <h3>The Rock</h3>
+                                    <p>Již od 499 KČ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </section>
+        </main>
     <footer>
         <div class="footer__menu">
             <ul class="footer__menu__list">
@@ -174,42 +206,23 @@
             </div>
         </div>
     </footer>
-    <script type="module">
-        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
-    
-        var swiper = new Swiper('.swiper', {
-      // Optional parameters
-      direction: 'horizontal',
-      loop: true,
-    
-      // If we need pagination
-      pagination: {
-        el: '.swiper-pagination'
-      },
-    
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    
-      slidesPerView: 1,
-          spaceBetween: 20,
-          centeredSlides: true,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          breakpoints: {
-            500: {
-              slidesPerView: 2,
-            },
-            800: {
-              slidesPerView: 2.8,
-            }
-          },
-    });
-    
-      </script>
 </body>
+<script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+    var swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  slidesPerView:"auto",
+      spaceBetween: 0,
+});
+
+  </script>
 </html>
