@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style/my_normalize.css">
+    <link rel="stylesheet" href="./style/typography.css">
+    <link rel="stylesheet" href="./style/layout.css">
+    <link rel="stylesheet" href="./style/colors.css">
+    <link rel="stylesheet" href="./style/icons.css">
+    <link rel="stylesheet" href="./style/landing.css">
+
+</head>
+<body>
+    <nav>
+        <menu>
+            <li class="nav__li--1x1"><a href="index.html" class="logo">
+                <img src="./imgs/logo.svg" alt="Logo">
+            </a></li>
+            <div class="menu__middle">
+                <li><a class="btn" href="./obchod.html">Obchod</a></li>
+                <li><a class="btn" href="#">Zmrzlina</a></li>
+            </div>
+            <li class="nav__li--1x1 nav__cart"><img src="./imgs/shopping-cart.svg" alt="Nákupní košík"></li>
+        </menu>
+    </nav>
+    <header class="exclusive__header">
+        <picture>
+            <img class="exclusive__header__img img--responsive exclusive__header__img--orange" src="./imgs/exclusive_jahoda_up.jpg">
+        </picture>
+        <picture>
+            <img class="exclusive__header__img img--responsive exclusive__header__img--blue" src="./imgs/exclusive_boruvka_up.jpg">
+        </picture>
+        <picture>
+            <img class="exclusive__header__img img--responsive exclusive__header__img--yellow" src="./imgs/exclusive_vanilka_up.jpg">
+        </picture>
+        <picture>
+            <img class="exclusive__header__img img--responsive exclusive__header__img--brown" src="./imgs/exclusive_coko_up.jpg">
+        </picture>
+        <div class="exclusive__header__nadpis">
+            <h1>Nová zmrzlina <strong class="strong--exlusive">EXCLUSIVE</strong></h1>
+            <div class="collor-selector">
+                <label class="exclusive__collor-selector__item">
+                    <input class="input--hidden exclusive__collor-selector__selector" type="radio" name="color" value="orange" checked>
+                    <span class="exclusive__collor-selector--collor exclusive__collor-selector--orange">Barva</span>
+                </label>
+                <label class="exclusive__collor-selector__item">
+                    <input class="input--hidden exclusive__collor-selector__selector" type="radio" name="color" value="blue">
+                    <span class="exclusive__collor-selector--collor exclusive__collor-selector--blue">Barva</span>
+                </label>
+                <label class="exclusive__collor-selector__item">
+                    <input class="input--hidden exclusive__collor-selector__selector" type="radio" name="color" value="yellow">
+                    <span class="exclusive__collor-selector--collor exclusive__collor-selector--yellow">Barva</span>
+                </label>
+                <label class="exclusive__collor-selector__item">
+                    <input class="input--hidden exclusive__collor-selector__selector" type="radio" name="color" value="brown">
+                    <span class="exclusive__collor-selector--collor exclusive__collor-selector--brown">Barva</span>
+                </label>
+            </div>
+            <a class="btn btn--product" href="./obchod.html#exclusive">Koupit</a>
+        </div>
+        
+    </header>
+    <main>
+    </main>
+    <footer>
+        <div class="footer__menu">
+            <ul class="footer__menu__list">
+                <li><h4>Obchod</h4></li>
+                <li><a href="./obchod.html#exclusive">Exclusivní zmrzlina</a></li>
+                <li><a href="./obchod.html#klasika">Klasická zmrzlina</a></li>
+                <li><a href="./obchod.html#special">Specialní zmrzlina</a></li>
+            </ul>
+            <ul class="footer__menu__list">
+                <li><h4>Pro Firmy</h4></li>
+                <li><a href="#">Ice Cream a byznys</a></li>
+                <li><a href="#">Nakoupit pro firmu</a></li>
+            </ul>
+            <ul class="footer__menu__list">
+                <li><h4>Kontakt</h4></li>
+                <li><a href="#">Kontaktní údaje</a></li>
+                <li><a href="#">Kontaktní formulář</a></li>
+            </ul>
+        </div>
+        <div class="footer__bottom">
+            <div>
+                <p>Copyright © 2024 Ice Cream Inc. Všechna práva vyhrazena.</p>
+                <p>Zásady ochrany soukromí  |  Používání cookies  |  Prodej a refundace  |  Mapa webu </p>
+            </div>
+            <div>
+                <p>Česko</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
