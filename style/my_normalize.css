@@ -1,0 +1,94 @@
+html {
+    line-height: 1.15; 
+    -webkit-text-size-adjust: 100%; 
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: block;
+}
+  
+img {
+    border-style: none;
+}
+
+
+
+
+.body--top-side-margin {
+    margin: 20px 20px 0px 20px;
+}
+
+.body--side-margin {
+    margin: 0px 20px;
+}
+
+.body--right-margin {
+    margin: 0px 20px 0px 0px;
+}
+
+.body--left-margin {
+    margin: 0px 0px 0px 20px;
+}
+
+.body--top-margin {
+    margin: 20px 0px 0px 0px;
+}
+
+/*----IMG------*/
+.img--responsive {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img--height {
+    height: 100%;
+}
+
+
+/*-----NADPISY------*/
+h2, h3, .nadpis{
+    margin: 0em;
+}
+
+h1,.podnadpis, .nadpis--hlavni {
+    margin: 0em 1em;
+}
+
+.exclusive__header__nadpis {
+    margin: 0em 2rem;
+}
+
+.exclusive__header__nadpis h1 {
+    margin: 0;
+}
+
+.napis--center {
+    padding: 0px 0px 20px 0px;
+    margin: 0px 20px;
+}
+
+.napis--left {
+    margin: 0px 1.25rem 0px 1.25rem;
+}
+
+
+li {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+

@@ -77,7 +77,7 @@ header, header picture img {
 
 @media only screen and (max-width: 800px) {
     .grid-item--width2 {
-        max-height: calc((100vw - 60px)/1.5);
+        max-height: calc((100vw - 60px)/1);
         height: 75vh;
     }
 

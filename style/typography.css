@@ -1,5 +1,5 @@
 h1, .nadpis--hlavni {
-    font-size: 3.25rem;
+    font-size: 3rem;
 }
 
 h2, .podnadpis, .nadpis{
@@ -24,6 +24,10 @@ nav a {
 }
 
 .odkazy a{
+    font-size: 1.2rem;
+}
+
+a.btn--product{
     font-size: 1.2rem;
 }
 
@@ -76,10 +80,13 @@ footer a, footer p{
 
 @media only screen and (min-width: 1440px) {
     :root{
-        font-size: calc(16px + 0.35vw);
+        font-size: calc(16px + 0.2vw);
     }
     .nadpis {
         font-size: 2.15rem;
+    }
+    .nadpis--shop {
+        font-size: 1.60rem;
     }
 
 }
