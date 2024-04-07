@@ -31,9 +31,14 @@ a.btn--product{
     font-size: 1.2rem;
 }
 
+a.btn--product + p{
+    margin: 0;
+}
+
 footer a, footer p{
     font-size: max(0.7rem, 12px);
 }
+
 
 @media only screen and (max-width: 850px) {
     .nadpis--hlavni {
@@ -97,3 +102,4 @@ footer a, footer p{
     }
 
 }
+

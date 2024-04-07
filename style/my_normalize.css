@@ -59,14 +59,6 @@ h1,.podnadpis, .nadpis--hlavni {
     margin: 0em 1em;
 }
 
-.exclusive__header__nadpis {
-    margin: 0em 2rem;
-}
-
-.exclusive__header__nadpis h1 {
-    margin: 0;
-}
-
 .napis--center {
     padding: 0px 0px 20px 0px;
     margin: 0px 20px;
