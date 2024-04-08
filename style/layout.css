@@ -167,6 +167,7 @@ footer::before {
 
 .shop__section__items .swiper-slide{
     flex-shrink: 1;
+    width: auto;
 }
     
 .shop__section__item{
