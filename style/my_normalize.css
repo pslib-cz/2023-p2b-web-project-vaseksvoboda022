@@ -68,6 +68,11 @@ h1,.podnadpis, .nadpis--hlavni {
     margin: 0px 1.25rem 0px 1.25rem;
 }
 
+.nadpis--center {
+    text-align: center;
+    padding: 1em 0.5em;
+}
+
 
 li {
     list-style: none;

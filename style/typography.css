@@ -6,7 +6,11 @@ h2, .podnadpis, .nadpis{
     font-size: 1.75rem;
 }
 
-.nadpis, .nadpis--hlavni {
+.nadpis--2_5rem {
+    font-size: 2.5rem;
+}
+
+.nadpis, .nadpis--hlavni, .nadnadpis {
     font-weight: bold;
 }
 
@@ -47,6 +51,10 @@ footer a, footer p{
 
     .nadpis--hlavni + .podnadpis{
         font-size: 1.50rem;
+    }
+
+    .nadpis--2_5rem {
+        font-size: 2rem;
     }
 
 }

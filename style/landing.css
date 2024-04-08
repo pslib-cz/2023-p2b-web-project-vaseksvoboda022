@@ -31,22 +31,6 @@ header, header picture img {
     object-position: top center;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px;
-}
-
-.grid-item--1x1, .grid-item--1x1 picture img{
-    aspect-ratio: 1 / 1;
-}
-
-.grid-item--width2 {
-    grid-column: span 2;
-    height: 80vh;
-    max-height: calc((100vw - 60px)/2);
-}
-
 .swiper {
     width: 100%;
     max-height: 1200px;

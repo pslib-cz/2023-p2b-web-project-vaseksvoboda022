@@ -9,6 +9,10 @@
     --red: #EA4961;
 
     --brown: #975e44;
+    --white-ad: #fff7f1ad;
+    --white-90: #FFF7F190;
+
+    --ex-theme: #F5827D;
 }
 
 html{
@@ -135,6 +139,7 @@ nav, footer {
     transition: all 0.5s;
 }
 
+
 .exclusive__collor-selector--orange {
     background-color: var(--orange);
 }
@@ -148,7 +153,7 @@ nav, footer {
     background-color: var(--brown);
 }
 
-
+/*
 body:has(.exclusive__collor-selector__selector[value="orange"]:checked) nav, body:has(.exclusive__collor-selector__selector[value="orange"]:checked) footer{
     background-color: var(--orange);
 }
@@ -160,6 +165,23 @@ body:has(.exclusive__collor-selector__selector[value="yellow"]:checked) nav, bod
 }
 body:has(.exclusive__collor-selector__selector[value="brown"]:checked) nav, body:has(.exclusive__collor-selector__selector[value="brown"]:checked) footer{
     background-color: var(--brown);
+}*/
+
+:root:has(.exclusive__collor-selector__selector[value="orange"]:checked){
+    --ex-theme: var(--orange);
+}
+:root:has(.exclusive__collor-selector__selector[value="blue"]:checked){
+    --ex-theme: var(--blue);
+}
+:root:has(.exclusive__collor-selector__selector[value="yellow"]:checked){
+    --ex-theme: var(--yellow);
+}
+:root:has(.exclusive__collor-selector__selector[value="brown"]:checked){
+    --ex-theme: var(--brown);
+}
+
+body:has(.exclusive__collor-selector__selector:checked) nav, body:has(.exclusive__collor-selector__selector:checked) footer{
+    background-color: var(--ex-theme);
 }
 
 
@@ -184,6 +206,10 @@ body:has(.exclusive__collor-selector__selector[value="brown"]:checked) .exclusiv
     background-repeat: no-repeat;
     background-position: center 25%;
     background-size: cover;
+}
+
+.exclusive__section__grid {
+    background-color: var(--ex-theme);
 }
 /*
 body:has(.exclusive__collor-selector__selector[value="orange"]:checked) .exclusive__header{
