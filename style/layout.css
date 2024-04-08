@@ -162,7 +162,7 @@ footer::before {
 .shop .swiper{
     max-height: calc((450px / 4) * 5);
     padding: 2em;
-    width: calc(100% - 3em);
+    width: calc(100% - 4em);
 }
 
 .shop__section__items .swiper-slide{
