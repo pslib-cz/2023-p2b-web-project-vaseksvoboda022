@@ -161,7 +161,7 @@ footer::before {
 }
 
 .shop .swiper{
-    max-height: 500px;
+    max-height: calc((450px / 4) * 5);
     padding: 1.5em;
     width: calc(100% - 3em);
 }
