@@ -2,17 +2,17 @@ body {
     margin: 0px;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 1.25rem;
     overflow: visible;
 }
 
 
 
-/*----Grid------*/
+/*--------------------Grid----------------------*/
 .grid {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
 }
 
 .grid-item--1x1, .grid-item--1x1 picture img{
@@ -29,6 +29,27 @@ body {
     grid-row: span 2;
 }
 
+@media only screen and (max-width: 800px) {
+    .grid-item--width2 {
+        max-height: calc((100vw - 60px)/1);
+        height: 75vh;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-item--width2 {
+        grid-column: span 1;
+        height: 75vh;
+        max-height: calc((100vw - 60px)*2);
+    }
+
+}
+
 
 
 /*-----input--------*/
@@ -38,7 +59,7 @@ body {
 
 
 
-/*--------a.btn----------*/
+/*----------------a.btn------------------*/
 a.btn {
     display: block;
 }
@@ -57,7 +78,7 @@ a.btn--product{
 
 
 
-/*-------Nav-------*/
+/*-------------------------------Nav-------------------------------*/
 
 nav {
     background-color: var(--green);
@@ -65,7 +86,7 @@ nav {
     top: 5px;
     z-index: 10;
     border-radius: 15px;
-    margin: 0px 40px;
+    margin: 0px 2.5rem;
     height: 5vh;
     min-height: 50px;
     width: calc(100% - 80px);
@@ -113,7 +134,7 @@ menu {
 
 
 
-/*--------FOOTER-------------*/
+/*------------------------FOOTER-----------------------------*/
 
 footer p {
     margin: 0.5em 0em;
@@ -163,15 +184,73 @@ footer::before {
 
 
 
-/*------Home Page-------*/
+/*-------------------------------Home Page-----------------------------*/
 
-.nav--sticky{
-    position: sticky;
+.card {
+    position: relative;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+
+.card__items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    position: absolute;
+    top: 5%;
+    justify-items: center;
+    gap: 0.5em;
+}
+
+.card__items--1x1 {
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    align-content: space-between;
+    justify-items: start;
+}
+
+.odkazy--right{
+    justify-self: end;
+}
+
+.landing__header, .landing__header picture img {
+    height: 80vh;
+}
+
+.swiper {
+    width: 100%;
+    max-height: 1200px;
+  }
+
+/*----Home-Gallery-----*/
+
+.gallery{
+    margin: 1em 0em 0em 0em;
+    display: grid;
+    gap: 1.25em
+}
+
+.gallery__slide {
+    position: relative;
+}
+
+.gallery__btn {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: var(--yellow);
+    padding: 0.75em;
+    border-radius: 1.5em;
+}
+
+.gallery h2 {
+    text-align: center;
 }
 
 
 
-/*----Shop-----*/
+/*----------------------------Shop-----------------------------*/
 
 .shop__main--margin {
     margin: 0px 0px 0px max(20px, 4vw) ;
@@ -205,9 +284,6 @@ footer::before {
     min-width: 208px;
     width: 20vw;
     max-width: 400px;
-    /*
-    height: calc(50vh - 1em);*/
-    /*max-height: calc(500px - 1em);*/
     aspect-ratio: 3/4;
     padding: 0.5em;
     border-radius: 20px;
@@ -238,7 +314,7 @@ footer::before {
 
 
 
-/*--------exclusive--------*/
+/*--------------------------------exclusive---------------------------*/
 .exclusive__header{
     padding: 60vh 0vh 0vh 0vh;
     height: 30vh;
@@ -306,8 +382,6 @@ footer::before {
 }
 
 .exclusive__section__grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 1.25em;
     height: calc(50vh + 4 * 1.25rem + 0.8rem);
     padding: 1.25rem;
@@ -318,6 +392,7 @@ footer::before {
 .exclusive__section__grid-item{
     border-radius: 0.5rem;
     overflow: hidden;
+    
 }
 
 .exclusive__section__grid div {
@@ -325,16 +400,33 @@ footer::before {
     padding: 1em;
     background-color: var(--white-90);
     border: 0.2rem solid var(--white-ad);
+    animation: slide-in linear forwards;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 50vh;
 }
+
+@keyframes slide-in {
+    from{
+        transform: translateX(20%);
+        opacity: 0.5;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+} 
 
 
 @media only screen and (max-width: 800px) {
     .exclusive__section__grid {
-        display: grid;
         grid-template-columns: 1fr;
         gap: 1em;
         height: auto;
     }
 }
 
+
+
+/*-----------------------------Kontakt--------------------------*/
 

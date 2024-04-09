@@ -73,6 +73,10 @@ h1,.podnadpis, .nadpis--hlavni {
     padding: 1em 0.5em;
 }
 
+.nadpis--underline {
+    padding: 0.5em 0.5em 0em 0.5em;
+    border-bottom: 2px solid var(--black);
+}
 
 li {
     list-style: none;

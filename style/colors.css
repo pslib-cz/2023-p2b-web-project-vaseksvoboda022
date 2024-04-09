@@ -222,6 +222,14 @@ body:has(.exclusive__collor-selector__selector[value="yellow"]:checked) .exclusi
     background-image: linear-gradient(to bottom, #fff7f100, #fff7f100, #fff7f100, #FFF7F1), url('../imgs/exclusive_vanilka.jpg');
 }*/
 
+
+
+/*----Swiper------*/
+
 .swiper-button-next, .swiper-button-prev {
     color: var(--black);
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #282828;
 }
