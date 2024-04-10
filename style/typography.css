@@ -6,11 +6,12 @@ h2, .podnadpis, .nadpis{
     font-size: 1.75rem;
 }
 
+
 .nadpis--2_5rem {
     font-size: 2.5rem;
 }
 
-.nadpis, .nadpis--hlavni, .nadnadpis {
+.nadpis, .nadpis--hlavni, .nadnadpis, .text--bold {
     font-weight: bold;
 }
 
@@ -39,16 +40,8 @@ a.btn--product + p{
     margin: 0;
 }
 
-footer a, footer p{
-    font-size: max(0.7rem, 12px);
-}
-
-.exclusive__section__grid-item h3 {
-    font-size: calc(130%);
-}
-
-.exclusive__section__grid-item p {
-    font-size: calc(120%);
+.kontakt-table th {
+    text-align: end;
 }
 
 
@@ -110,6 +103,18 @@ footer a, footer p{
         font-size: 1.60rem;
     }
 
+    .kontakt-container {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
 }
 
 @media only screen and (min-width: 2000px) {
@@ -117,5 +122,19 @@ footer a, footer p{
         font-size: calc(16px + 0.4vw);
     }
 
+    .kontakt-container form input, .kontakt-container form textarea{
+        font-size: 1.25rem;
+    }
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
 }
 
+footer a, footer p{
+    font-size: max(0.7rem, 12px);
+}

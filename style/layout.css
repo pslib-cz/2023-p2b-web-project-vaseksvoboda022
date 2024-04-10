@@ -15,6 +15,11 @@ body {
     gap: 1.25rem;
 }
 
+.grid--one-col {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
 .grid-item--1x1, .grid-item--1x1 picture img{
     aspect-ratio: 1 / 1;
 }
@@ -337,7 +342,6 @@ footer::before {
     position: relative;
     aspect-ratio: 1;
     width: 1.75rem;
-    cursor: pointer;
 }
 
 .exclusive__collor-selector--collor{
@@ -349,6 +353,7 @@ footer::before {
     top: 0;
     left: 0;
     border: 3px solid #28282800;
+    cursor: pointer;
 }
 
 .exclusive__header__img {
@@ -366,7 +371,7 @@ footer::before {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 105%;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #FFF7F180, var(--white), var(--white));
     z-index: -1;
 }
@@ -405,7 +410,7 @@ footer::before {
     animation: slide-in linear forwards;
     animation-timeline: view();
     animation-range-start: cover;
-    animation-range-end: 40vh;
+    animation-range-end: 50vh;
 }
 
 @keyframes slide-in {
@@ -431,4 +436,28 @@ footer::before {
 
 
 /*-----------------------------Kontakt--------------------------*/
+
+.kontakt-container {
+    padding: 0rem 1.75rem 1.75rem 1.75rem;
+}
+
+.kontakt-form, .kontakt-table {
+    width: 100%;
+    justify-items: center;
+}
+
+.kontakt-form input, .kontakt-form textarea{
+    width: calc(100% - 1.5em);
+    max-width: 25rem;
+    padding: 0.75em;
+    border-radius: 1rem;
+    border: none;
+}
+
+.kontakt-form .form-submit{
+    width: 100%;
+    max-width: 26.25rem;
+}
+
+
 

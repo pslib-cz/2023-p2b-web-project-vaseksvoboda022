@@ -153,19 +153,6 @@ nav, footer {
     background-color: var(--brown);
 }
 
-/*
-body:has(.exclusive__collor-selector__selector[value="orange"]:checked) nav, body:has(.exclusive__collor-selector__selector[value="orange"]:checked) footer{
-    background-color: var(--orange);
-}
-body:has(.exclusive__collor-selector__selector[value="blue"]:checked) nav, body:has(.exclusive__collor-selector__selector[value="blue"]:checked) footer{
-    background-color: var(--blue);
-}
-body:has(.exclusive__collor-selector__selector[value="yellow"]:checked) nav, body:has(.exclusive__collor-selector__selector[value="yellow"]:checked) footer{
-    background-color: var(--yellow);
-}
-body:has(.exclusive__collor-selector__selector[value="brown"]:checked) nav, body:has(.exclusive__collor-selector__selector[value="brown"]:checked) footer{
-    background-color: var(--brown);
-}*/
 
 :root:has(.exclusive__collor-selector__selector[value="orange"]:checked){
     --ex-theme: var(--orange);
@@ -211,16 +198,6 @@ body:has(.exclusive__collor-selector__selector[value="brown"]:checked) .exclusiv
 .exclusive__section__grid {
     background-color: var(--ex-theme);
 }
-/*
-body:has(.exclusive__collor-selector__selector[value="orange"]:checked) .exclusive__header{
-    background-image: linear-gradient(to bottom, #fff7f100, #fff7f100, #fff7f100, #fcd8d8), url('../imgs/exclusive_jahoda.jpg');
-}
-body:has(.exclusive__collor-selector__selector[value="blue"]:checked) .exclusive__header{
-    background-image: linear-gradient(to bottom, #fff7f100, #fff7f100, #fff7f100, #FFF7F1), url('../imgs/exclusive_boruvka.jpg');
-}
-body:has(.exclusive__collor-selector__selector[value="yellow"]:checked) .exclusive__header{
-    background-image: linear-gradient(to bottom, #fff7f100, #fff7f100, #fff7f100, #FFF7F1), url('../imgs/exclusive_vanilka.jpg');
-}*/
 
 
 
@@ -232,4 +209,14 @@ body:has(.exclusive__collor-selector__selector[value="yellow"]:checked) .exclusi
 
 .swiper-pagination-bullet-active{
     background-color: #282828;
+}
+
+/*---------Kontakt--------------*/
+
+.kontakt-form input, .kontakt-form textarea {
+    background-color: var(--blue);
+}
+
+.kontakt-form .form-submit {
+    background-color: var(--orange);
 }
