@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt</title>
 
+    <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="./style/my_normalize.css">
     <link rel="stylesheet" href="./style/typography.css">
     <link rel="stylesheet" href="./style/layout.css">
@@ -19,10 +20,10 @@
             <li class="nav__li--1x1"><a href="index.html" class="logo">
                 <img src="./imgs/logo.svg" alt="Logo">
             </a></li>
-            <div class="menu__middle">
-                <li><a class="btn" href="./obchod.html">Obchod</a></li>
-                <li><a class="btn" href="#">Zmrzlina</a></li>
-            </div>
+            <li class="menu__middle">
+                <a class="btn" href="./obchod.html">Obchod</a>
+                <a class="btn" href="#">Zmrzlina</a>
+            </li>
             <li class="nav__li--1x1 nav__cart"><img src="./imgs/shopping-cart.svg" alt="Nákupní košík"></li>
         </menu>
     </nav>
@@ -30,16 +31,35 @@
         <h1 class="nadpis--center nadpis--underline">Kontakt</h1>
     </header>
     <main class="grid">
-        <div id="kontakt-form">
-            <form>
-                <label>
-                    <input class="input" type="email" placeholder="" required="">
-                    <span>Email</span>
-                </label> 
-              </form>
+        <div id="kon-folmular" class="kontakt-container">
+            <h2 class="nadpis--center">Formulář</h2>
+            <form action="" class="kontakt-form grid grid--one-col">
+                <input required="" class="kontakt-form__input" type="text" name="name" id="name" placeholder="Jméno">
+                <input required="" class="kontakt-form__input" type="email" name="email" id="email" placeholder="E-mail">
+                <textarea placeholder="Zpráva" rows="10" cols="30" name="message" class="kontakt-form__input"></textarea>
+                <input class="form-submit text--bold" type="submit" value="Odeslat">
+            </form>
         </div>
-        <div id="kontakt-info">
-
+        <div id="kon-info" class="kontakt-container">
+            <h2 class="nadpis--center">Kontaktní údaje</h2>
+            <table class="kontakt-table grid grid--one-col">
+                <colgroup>
+                    <col>
+                    <col>
+                </colgroup>
+                <tr>
+                    <th>Adresa:</th>
+                    <td><address>9 Šrekova bažina 13</address></td> 
+                </tr>
+                <tr>
+                    <th>Email:</th>
+                    <td>podpora@iscream.cz</td> 
+                </tr>
+                <tr>
+                    <th>Tel:</th>
+                    <td>+420 111 222 333</td> 
+                </tr>
+            </table>
         </div>
     </main>
     <footer>
@@ -57,8 +77,8 @@
             </ul>
             <ul class="footer__menu__list">
                 <li><h4>Kontakt</h4></li>
-                <li><a href="#">Kontaktní údaje</a></li>
-                <li><a href="#">Kontaktní formulář</a></li>
+                <li><a href="./kontakt.html#kon-info">Kontaktní údaje</a></li>
+                <li><a href="./kontakt.html#kon-folmular">Kontaktní formulář</a></li>
             </ul>
         </div>
         <div class="footer__bottom">

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Domů | Exclusive</title>
 
+    <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="./style/my_normalize.css">
     <link rel="stylesheet" href="./style/typography.css">
     <link rel="stylesheet" href="./style/layout.css">
@@ -19,24 +20,32 @@
             <li class="nav__li--1x1"><a href="index.html" class="logo">
                 <img src="./imgs/logo.svg" alt="Logo">
             </a></li>
-            <div class="menu__middle">
-                <li><a class="btn" href="./obchod.html">Obchod</a></li>
-                <li><a class="btn" href="#">Zmrzlina</a></li>
-            </div>
+            <li class="menu__middle">
+                <a class="btn" href="./obchod.html">Obchod</a>
+                <a class="btn" href="#">Zmrzlina</a>
+            </li>
             <li class="nav__li--1x1 nav__cart"><img src="./imgs/shopping-cart.svg" alt="Nákupní košík"></li>
         </menu>
     </nav>
     <header class="exclusive__header">
         <picture>
+            <source srcset="./imgs/exclusive_jahoda.webp 600w, ./imgs/exclusive_jahoda_up.webp 1200w" type="image/webp">
+            <source srcset="./imgs/exclusive_jahoda.jpg 600w" type="image/jpeg">
             <img class="exclusive__header__img img--responsive img--height exclusive__header__img--orange" src="./imgs/exclusive_jahoda_up.jpg">
         </picture>
         <picture>
+            <source srcset="./imgs/exclusive_boruvka.webp 600w, ./imgs/exclusive_boruvka_up.webp 1200w" type="image/webp">
+            <source srcset="./imgs/exclusive_boruvka.jpg 600w" type="image/jpeg">
             <img class="exclusive__header__img img--responsive img--height exclusive__header__img--blue" src="./imgs/exclusive_boruvka_up.jpg">
         </picture>
         <picture>
+            <source srcset="./imgs/exclusive_v.webp 600w, ./imgs/exclusive_vanilka_up.webp 1200w" type="image/webp">
+            <source srcset="./imgs/exclusive_vanilka.jpg 600w" type="image/jpeg">
             <img class="exclusive__header__img img--responsive img--height exclusive__header__img--yellow" src="./imgs/exclusive_vanilka_up.jpg">
         </picture>
         <picture>
+            <source srcset="./imgs/exclusive_coko.webp 600w, ./imgs/exclusive_coko_up.webp 1200w" type="image/webp">
+            <source srcset="./imgs/exclusive_coko.jpg 600w" type="image/jpeg">
             <img class="exclusive__header__img img--responsive img--height exclusive__header__img--brown" src="./imgs/exclusive_coko_up.jpg">
         </picture>
         <div class="exclusive__header__nadpis">
@@ -68,6 +77,8 @@
             <h2 class="nadpis--center nadpis--2_5rem">Nová zmrzlina, nové možnosti.</h2>
             <div class="grid exclusive__section__grid">
                 <picture class="grid-item--height2 exclusive__section__grid-item">
+                    <source srcset="./imgs/flavor512.webp 1000w, ./imgs/flavor1K.webp 2000w" type="image/webp">
+                    <source srcset="./imgs/flavor512.jpg 1000w" type="image/jpeg">
                     <img class="img--responsive img--height" src="./imgs/flavor1K.jpg" alt="zmrzlina z prachu chuti">
                 </picture>
                 <div class="exclusive__section__grid-item">
@@ -91,13 +102,13 @@
             </ul>
             <ul class="footer__menu__list">
                 <li><h4>Pro Firmy</h4></li>
-                <li><a href="./kontakt.html">Ice Cream a byznys</a></li>
+                <li><a href="#">Ice Cream a byznys</a></li>
                 <li><a href="#">Nakoupit pro firmu</a></li>
             </ul>
             <ul class="footer__menu__list">
                 <li><h4>Kontakt</h4></li>
-                <li><a href="./kontakt.html">Kontaktní údaje</a></li>
-                <li><a href="./kontakt.html">Kontaktní formulář</a></li>
+                <li><a href="./kontakt.html#kon-info">Kontaktní údaje</a></li>
+                <li><a href="./kontakt.html#kon-folmular">Kontaktní formulář</a></li>
             </ul>
         </div>
         <div class="footer__bottom">
