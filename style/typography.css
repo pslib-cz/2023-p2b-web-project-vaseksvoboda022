@@ -43,6 +43,14 @@ footer a, footer p{
     font-size: max(0.7rem, 12px);
 }
 
+.exclusive__section__grid-item h3 {
+    font-size: calc(130%);
+}
+
+.exclusive__section__grid-item p {
+    font-size: calc(120%);
+}
+
 
 @media only screen and (max-width: 850px) {
     .nadpis--hlavni {

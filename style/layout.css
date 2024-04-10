@@ -120,6 +120,7 @@ menu {
 .nav__cart{
     height: 75%;
     margin: 0.25%;
+    cursor: pointer;
 }
 
 .nav__cart img{
@@ -336,6 +337,7 @@ footer::before {
     position: relative;
     aspect-ratio: 1;
     width: 1.75rem;
+    cursor: pointer;
 }
 
 .exclusive__collor-selector--collor{
@@ -403,7 +405,7 @@ footer::before {
     animation: slide-in linear forwards;
     animation-timeline: view();
     animation-range-start: cover;
-    animation-range-end: 50vh;
+    animation-range-end: 40vh;
 }
 
 @keyframes slide-in {
