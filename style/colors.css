@@ -167,7 +167,7 @@ nav, footer {
     --ex-theme: var(--brown);
 }
 
-body:has(.exclusive__collor-selector__selector:checked) nav, body:has(.exclusive__collor-selector__selector:checked) footer{
+.collor-theme-exclusive nav, .collor-theme-exclusive footer{
     background-color: var(--ex-theme);
 }
 
