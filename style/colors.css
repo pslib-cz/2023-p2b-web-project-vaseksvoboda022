@@ -56,7 +56,14 @@ h1, h2, h3, h4, p, a {
     opacity: 1;
 }
 
+nav, footer {
+    transition: all 0.5s;
+    background-color: var(--green);
+}
 
+footer::before {
+    background-color: var(--black);
+}
 
 /*----a-----*/
 .odkazy a {
@@ -82,6 +89,7 @@ h1, h2, h3, h4, p, a {
     text-decoration: underline;
 }*/
 
+
 /*------SHOP ---------*/
 .shop__section__item--white {
     background-image: linear-gradient(135deg, #e8e5e5, #fafafa);
@@ -94,7 +102,6 @@ h1, h2, h3, h4, p, a {
 .shop__section__item--blueberry {
     background-image: linear-gradient(135deg, #2d81f7, #699edf);
 }
-
 .shop__section__item--vanilla {
     background-image: linear-gradient(135deg, #f9c57d, #f9df9c);
 }*/
@@ -123,6 +130,7 @@ h1, h2, h3, h4, p, a {
     box-shadow: 0px 2px 0.5rem 2px #2828288c;
 }
 
+
 /*-------product-----*/
 
 a.btn--product{
@@ -134,11 +142,8 @@ a.btn--product:hover{
     background-color: #4aa5fb;
 }
 
-/*-------exclusive-----*/
-nav, footer {
-    transition: all 0.5s;
-}
 
+/*-------exclusive-----*/
 
 .exclusive__collor-selector--orange {
     background-color: var(--orange);
@@ -167,8 +172,13 @@ nav, footer {
     --ex-theme: var(--brown);
 }
 
-.collor-theme-exclusive nav, .collor-theme-exclusive footer{
+.theme-collor{
     background-color: var(--ex-theme);
+}
+
+.exclusive__section__grid-item, .exclusive__item--white-card {
+    background-color: var(--white-90);
+    border: 0.2rem solid var(--white-ad);
 }
 
 
@@ -193,10 +203,6 @@ body:has(.exclusive__collor-selector__selector[value="brown"]:checked) .exclusiv
     background-repeat: no-repeat;
     background-position: center 25%;
     background-size: cover;
-}
-
-.exclusive__section__grid {
-    background-color: var(--ex-theme);
 }
 
 

@@ -17,7 +17,7 @@ body {
 
 .grid--one-col {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 1.25rem;
 }
 
 .grid-item--1x1, .grid-item--1x1 picture img{
@@ -86,7 +86,6 @@ a.btn--product{
 /*-------------------------------Nav-------------------------------*/
 
 nav {
-    background-color: var(--green);
     position: sticky;
     top: 5px;
     z-index: 10;
@@ -147,7 +146,6 @@ footer p {
 }
 
 footer {
-    background-color: var(--green);
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -163,9 +161,7 @@ footer::before {
     content: "";
     width: 100%;
     height: 1px;
-    background-color: var(--black);
     order: 1;
-    
 }
 
 .footer__menu__list {
@@ -179,13 +175,6 @@ footer::before {
     padding: 0px 40px;
     flex-wrap: wrap;
     order: 2;
-}
-
-.footer__line {
-    content: "";
-    width: 100%;
-    height: 1px;
-    background-color: var(--black);
 }
 
 
@@ -226,7 +215,6 @@ footer::before {
 
 .swiper {
     width: 100%;
-    max-height: 1200px;
   }
 
 /*----Home-Gallery-----*/
@@ -386,6 +374,7 @@ footer::before {
 
 .exclusive__main {
     margin: 20vh 10vw;
+    gap: 10vh;
 }
 
 .exclusive__section__grid {
@@ -402,11 +391,9 @@ footer::before {
     
 }
 
-.exclusive__section__grid div {
+.exclusive__section__grid > div {
     height: calc(100% - 0.4rem - 2 * 1em);
     padding: 1em;
-    background-color: var(--white-90);
-    border: 0.2rem solid var(--white-ad);
     animation: slide-in linear forwards;
     animation-timeline: view();
     animation-range-start: cover;
@@ -433,7 +420,77 @@ footer::before {
     }
 }
 
+.exclusive__reviews > div {
+    justify-items: center;
+}
 
+.exclusive__review {
+    border-radius: 1.5rem;
+    padding: 0.75rem;
+    max-width: 75rem;
+    width: 100%;
+    animation: scale-down-up-down linear forwards;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: cover;
+}
+
+@keyframes scale-down-up-down {
+    0%{
+        transform: scale(0.95);
+        opacity: 0.9;
+    }
+    35% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    60% {
+        transform: scale(1.07);
+        opacity: 1;
+    }
+    85% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.05);
+        opacity: 0.9;
+    }
+} 
+
+.exclusive__review-inside {
+    display: flex;
+    border-radius: 1rem;
+    gap: 1.25rem;
+    padding: 0.75rem;
+    align-items: center;
+    
+}
+
+@media only screen and (min-width: 601px) {
+    .exclusive__review-inside--switched{
+        justify-content: space-between;
+    }
+    .exclusive__review-inside--switched picture{
+        order: 1;
+    }}
+
+.exclusive__review__profile-pic {
+    max-width: 12.5rem;
+    min-width: 200px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .exclusive__review-inside{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .exclusive__review__profile-pic {
+        max-width:calc(100% - 0.5rem - 0.75rem);
+        padding: 0.5rem;
+    }}
 
 /*-----------------------------Kontakt--------------------------*/
 
