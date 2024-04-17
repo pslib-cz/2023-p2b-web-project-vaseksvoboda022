@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="./imgs/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="./style/normalize.css">
-    <link rel="stylesheet" href="./style/my_normalize.css">
+    <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/typography.css">
     <link rel="stylesheet" href="./style/layout.css">
     <link rel="stylesheet" href="./style/colors.css">
@@ -39,7 +39,7 @@
             <img class="exclusive__header__img img--responsive img--height exclusive__header__img--blue" alt="exclusivní zmrzlina na talířku" src="./imgs/exclusive_boruvka_up.jpg">
         </picture>
         <picture>
-            <source srcset="./imgs/exclusive_v.webp 600w, ./imgs/exclusive_vanilka_up.webp 1200w" type="image/webp" sizes="100vw">
+            <source srcset="./imgs/exclusive_vanilka.webp 600w, ./imgs/exclusive_vanilka_up.webp 1200w" type="image/webp" sizes="100vw">
             <source srcset="./imgs/exclusive_vanilka.jpg 600w" type="image/jpeg" sizes="100vw">
             <img class="exclusive__header__img img--responsive img--height exclusive__header__img--yellow" alt="exclusivní zmrzlina na talířku" src="./imgs/exclusive_vanilka_up.jpg">
         </picture>
@@ -77,8 +77,8 @@
             <h2 class="nadpis--center nadpis--2_5rem">Nová zmrzlina, nové možnosti.</h2>
             <div class="grid exclusive__section__grid theme-collor">
                 <picture class="grid-item--height2 exclusive__section__grid-item">
-                    <source srcset="./imgs/flavor512.webp 1000w, ./imgs/flavor1K.webp 2000w" type="image/webp" sizes="70vw">
-                    <source srcset="./imgs/flavor512.jpg 1000w" type="image/jpeg" sizes="70vw">
+                    <source srcset="./imgs/flavor512.webp 512w, ./imgs/flavor1K.webp 1000w" type="image/webp" sizes="(max-width: 1000px) 512px, 1000px">
+                    <source srcset="./imgs/flavor512.jpg 512w" type="image/jpeg" sizes="(max-width: 1000px) 512px, 1000px">
                     <img class="img--responsive img--height" src="./imgs/flavor1K.jpg" alt="zmrzlina z prachu chuti">
                 </picture>
                 <div class="exclusive__section__grid-item">
@@ -93,10 +93,11 @@
         </section>
         <section class="exclusive__main__section exclusive__reviews">
             <h2 class="nadpis--center nadpis--2_5rem">Doporučuje 10 z 10.</h2>
-            <div class="grid grid--one-col">
-                <div class="theme-collor exclusive__review ">
+            <div class="grid grid--one-col exclusive__reviews-grid">
+                <div class="theme-collor exclusive__review">
                     <div class="exclusive__item--white-card exclusive__review-inside">
                         <picture>
+                            <source srcset="./imgs/prof_pic_jana_450.webp" type="image/webp">
                             <img class="exclusive__review__profile-pic img--responsive" alt="profilovy obrazek" src="./imgs/prof_pic_jana_450.jpg">
                         </picture>
                         <div>
@@ -108,6 +109,7 @@
                 <div class="theme-collor exclusive__review ">
                     <div class="exclusive__item--white-card exclusive__review-inside exclusive__review-inside--switched">
                         <picture>
+                            <source srcset="./imgs/prof_pic_450.webp" type="image/webp">
                             <img class="exclusive__review__profile-pic img--responsive" alt="profilovy obrazek" src="./imgs/prof_pic_450.jpg">
                         </picture>
                         <div>
@@ -119,6 +121,7 @@
                 <div class="theme-collor exclusive__review ">
                     <div class="exclusive__item--white-card exclusive__review-inside">
                         <picture>
+                            <source srcset="./imgs/profile_pic_tony_450.webp" type="image/webp">
                             <img class="exclusive__review__profile-pic img--responsive" alt="profilovy obrazek" src="./imgs/profile_pic_tony_450.jpg">
                         </picture>
                         <div>
