@@ -387,8 +387,16 @@ footer::before {
 
 .exclusive__section__grid-item{
     border-radius: 0.5rem;
-    overflow: hidden;
-    
+    overflow: hidden;  
+}
+
+@media only screen and (max-width: 400px) {
+    .exclusive__section__grid {
+        padding: 1rem;
+    }
+    .exclusive__section__grid-item{
+        border-radius: 0.75rem;
+    }
 }
 
 .exclusive__section__grid > div {
@@ -420,8 +428,9 @@ footer::before {
     }
 }
 
-.exclusive__reviews > div {
+.exclusive__reviews-grid {
     justify-items: center;
+    gap: 1.5rem;
 }
 
 .exclusive__review {
@@ -483,6 +492,9 @@ footer::before {
 }
 
 @media only screen and (max-width: 600px) {
+    .exclusive__reviews-grid {
+        gap: 3rem;
+    }
     .exclusive__review-inside{
         justify-content: center;
         flex-wrap: wrap;
