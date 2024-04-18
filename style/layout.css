@@ -118,7 +118,7 @@ menu {
 
 .nav__li--1x1 img{
     height: 100%;
-    border-radius: 10px;
+    border-radius: calc(1rem - 8px);
 }
 
 .nav__cart{
